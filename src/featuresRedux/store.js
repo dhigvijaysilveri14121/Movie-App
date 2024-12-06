@@ -1,17 +1,19 @@
+import { createStore } from "redux";
+
 const initialState = {
   movies: [],
 };
 
 const movieReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'addMovie':
+    case 'ADD_MOVIE':
       return {
         ...state,
-        movies: [...state.movies, action.payload], 
+        movies: [...state.movies, ...action.payload], 
       };
     default:
       return state;
   }
 };
-
-export default movieReducer;
+const store=createStore(movieReducer)
+export default store;
