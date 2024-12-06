@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+}
+body{
+  background-color: black;
+}
+.header-container{
+  background-color: rgb(80, 72, 72);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+padding: 20px;
+
+}
+.login-btn{
+  color: rgb(255, 255, 255) !important;
+  margin-right: 30px !important;
+}
+.login-btn:hover{
+ background-color: rgb(194, 177, 177) !important;
+ color: black !important;
+}
+.app-logo{
+  color: white;
+  text-decoration: none;
+}
+.footer-container{
+  background-color: rgb(80, 72, 72);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 15px 0 15px 0;
+}
